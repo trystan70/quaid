@@ -88,7 +88,7 @@ const main = async () => {
 
     print(`indexing players...`, 'debug')
     backend.getPlayers();
-    setInterval(backend.getRbxFlipPlayers, 60 * 60 * 1000)
+    setInterval(backend.getPlayers, 60 * 60 * 1000)
     await backend.getRbxFlipPlayers();
     setInterval(backend.getRbxFlipPlayers, 5 * 60 * 1000)
 
